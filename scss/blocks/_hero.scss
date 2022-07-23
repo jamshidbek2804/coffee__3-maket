@@ -1,0 +1,37 @@
+.hero {
+  width: 100%;
+  margin-bottom: 155px;
+
+  &__container {
+    @include container;
+  }
+
+  &__bg {
+    max-width: 1240px;
+    min-height: 450px;
+    background-image: url(/img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 85px;
+  }
+
+  &__info {
+    max-width: 486px;
+  }
+
+  &__title {
+    @include font-fraunces;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fefcf7;
+  }
+
+  &__paragraf {
+    @include font-barlow;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}

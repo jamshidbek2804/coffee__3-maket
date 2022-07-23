@@ -1,0 +1,73 @@
+.main {
+  width: 100%;
+  margin-bottom: 168px;
+
+  &__container {
+    @include container;
+  }
+
+  &__bg {
+    max-width: 1240px;
+    min-height: 653px;
+    background-color: rgba(44, 52, 62, 1);
+    border-radius: 10px;
+    padding: 85px;
+  }
+
+  &__position {
+    position: relative;
+    max-width: 791px;
+    min-height: 31px;
+    padding-top: 113px;
+    padding-bottom: 67px;
+    @extend %flex-sb;
+  }
+
+  &__position-circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0e8784;
+  }
+
+  &__position-line {
+    position: absolute;
+    width: 760px;
+    height: 1px;
+    background-color: rgba(253, 214, 186, 1);
+    margin-left: 15.5px;
+    border: 2px solid #fdd6ba;
+  }
+
+  &__cards {
+    max-width: 1045px;
+    margin: 0 auto;
+    @extend %flex-sb;
+  }
+
+  &__card {
+    max-width: 285px;
+  }
+
+  &__card-number {
+    @include font-fraunces;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fdd6ba;
+  }
+
+  &__card-title {
+    @include font-fraunces;
+    max-width: 255px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fefcf7;
+  }
+
+  &__card-paragraf {
+    @include font-barlow;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+  }
+}

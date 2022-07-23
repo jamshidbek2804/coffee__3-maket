@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  padding: 45px 0;
+
+  &__container {
+    @include container;
+  }
+
+  &__info {
+    @extend %flex-sb;
+  }
+
+  &__nav {
+    list-style-type: none;
+  }
+  &__nav-link {
+    display: inline-block;
+  }
+
+  &__nav-link-item {
+    @include font-barlow;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+
+  &__nav-link-item-2 {
+    margin: 0 16px;
+  }
+
+  &__nav-link-item:hover {
+    color: rgba(51, 61, 75, 1);
+  }
+}

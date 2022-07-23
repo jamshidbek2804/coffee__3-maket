@@ -1,0 +1,50 @@
+.footer {
+  width: 100%;
+
+  &__container {
+    @include container;
+  }
+
+  &__displey {
+    @extend %flex-sb;
+  }
+
+  &__info {
+    padding: 47px 85px;
+    background: #2c343e;
+    margin-bottom: 88px;
+  }
+
+  &__start {
+    @extend %flex-sb;
+  }
+
+  &__end {
+    @extend %flex-sb;
+    gap: 24px;
+  }
+
+  &__navbar {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+  }
+
+  &__nav-list-item {
+    @include font-barlow;
+    font-size: 12px;
+    line-height: 15px;
+    color: #83888f;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__nav-list-item:hover {
+    color: #fefcf7;
+  }
+
+  &__messangers:hover path {
+    fill: #fdd6ba;
+    cursor: pointer;
+  }
+}

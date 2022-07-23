@@ -1,0 +1,11 @@
+@mixin font-barlow {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin font-fraunces {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+}
